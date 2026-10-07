@@ -1,0 +1,21 @@
+{
+  "name": "brand-mention-monitor",
+  "version": "1.0.0",
+  "description": "Monitor brand mentions on Threads, Reddit and Google News with Apify, let Claude filter and classify them, and get a daily digest of what people say and what needs a reply.",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "ingest": "node --env-file-if-exists=.env src/ingest.js",
+    "classify": "node --env-file-if-exists=.env src/classify.js",
+    "digest": "node --env-file-if-exists=.env src/digest.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "apify-client": "^2.25.0",
+    "pg": "^8.23.1",
+    "zod": "^4.6.5"
+  }
+}

@@ -1,0 +1,2 @@
+# One keyword per line: your brand, product names, a common misspelling. Lines starting with # are ignored.
+Supabase
