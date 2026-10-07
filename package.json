@@ -10,7 +10,9 @@
   "scripts": {
     "ingest": "node --env-file-if-exists=.env src/ingest.js",
     "classify": "node --env-file-if-exists=.env src/classify.js",
-    "digest": "node --env-file-if-exists=.env src/digest.js"
+    "digest": "node --env-file-if-exists=.env src/digest.js",
+    "report": "node --env-file-if-exists=.env src/report.js",
+    "start": "npm run ingest && npm run classify && npm run digest && npm run report"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.131.0",
